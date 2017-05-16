@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SEINOVA SARL | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- FullCalendar -->
+    <link href="../vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="../vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>SEINOVA SARL!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home <!--<span class="fa fa-chevron-down"></span>--></a>
+              
+                  </li>
+                  <li><a href="clients.html"><i class="fa fa-users"></i> Clients<!--<span class="fa fa-chevron-down"></span>--></a>
+                  
+                  </li>
+                  <li><a href='Marchés.html'><i class="fa fa-shopping-cart"></i> Marchés <!-- <span class="fa fa-chevron-down"></span>--></a>
+                  
+                  </li>
+				  
+				  <li><a href="Bons_de_commande"><i class="fa fa-file-text"></i>Bons De Commande <!--<span class="fa fa-chevron-down"></span>--></a>
+               
+                  </li>
+				  
+				  
+                  <li><a href="projects.html"><i class="fa fa-bars"></i> Projets   <!-- <span class="fa fa-chevron-down"></span>--></a>
+                   
+                  </li>
+				  
+                  <li><a href="calendar.html"><i class="fa fa-calendar-o"></i> Reunions <!--<span class="fa fa-chevron-down"></span>--></a>
+               
+                  </li>
+				  
+				  <li><a href="contacts.html"><i class="fa fa-user"></i> Comptes utilisateurs <!--<span class="fa fa-chevron-down"></span>--></a></li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Forum</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-pencil-square-o"></i>Idées / Suggestions <span class="fa fa-chevron-down"></span></a>
+				  
+                    <ul class="nav child_menu">
+                      <li><a href="invoice.html">Idées</a></li>
+					
+                      <li><a href="invoice.html">Suggestions</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="fa fa-envelope-o"></i> Discussion Privée <!-- <span class="fa fa-chevron-down"></span>--></a>
+               
+                </ul>
+              </div>
+
+            </div> 
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>REUNIONS <small>Créer Une Nouvelle Réunion</small></h3>
+              </div>
+
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Calendrier des reunions <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id='calendar'></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- calendar modal -->
+    <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">Créer Une Nouvelle Réunion</h4>
+          </div>
+          <div class="modal-body">
+            <div id="testmodal" style="padding: 5px 20px;">
+              <form id="antoform" class="form-horizontal calender" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Titre</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title" name="title">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Description</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" style="height:55px;" id="descr" name="descr"  rows="10" cols="50"></textarea>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Lieu</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title10" name="title10">
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Heure-Début</label>
+                  <div class="col-sm-9">
+                    <input type="time" class="form-control" id="title11" name="title11">
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Heure-Fin</label>
+                  <div class="col-sm-9">
+                    <input type="time" class="form-control" id="title12" name="title12">
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label" for="participants">Participants:</label>
+                  <div class="col-sm-9">
+				   <select name="Participants" id="participants" multiple size="10">
+				    <optgroup label="CAB DG">
+					   <option value="DEV1">DG</option>
+					   <option value="DEV7">AD-Josiane</option>
+					</optgroup>
+					<optgroup label="DIRECTION COM">
+						<option value="DEV7">==//==</option>
+					</optgroup>
+					<optgroup label="DIRECTION TECHNIQUE">
+						<option value="DEV2">DT-Patrick</option>
+					</optgroup>
+					<optgroup label="SALLE IT">
+						<option value="DEV3">DEV3-Ngauss</option>
+					    <option value="DEV4">DEV4-Jospin</option>
+					    <option value="DEV5">DEV5-Yvan</option>
+					    <option value="DEV6">DEV6-Miguel</option>
+					</optgroup> 
+				   </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary antosubmit">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel2">Modifier une Réunion</h4>
+          </div>
+          <div class="modal-body">
+
+            <div id="testmodal2" style="padding: 5px 20px;">
+              <form id="antoform2" class="form-horizontal calender" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Titre</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title2" name="title2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Description</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" style="height:55px;" id="descr2" name="descr2"  rows="10" cols="50"></textarea>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Lieu</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title20" name="title20">
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Heure-Debut</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title21" name="title21">
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Heure-Fin</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title22" name="title22">
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label" for="participants">Participants:</label>
+                  <div class="col-sm-9">
+				   <select name="Participants" id="participants2" multiple size="10" width="60%">
+				    <optgroup label="CAB DG">
+					   <option value="DEV1">DG</option>
+					   <option value="DEV7">AD-Josiane</option>
+					</optgroup>
+					<optgroup label="DIRECTION COM">
+						<option value="DEV7">==//==</option>
+					</optgroup>
+					<optgroup label="DIRECTION TECHNIQUE">
+						<option value="DEV2">DT-Patrick</option>
+					</optgroup>
+					<optgroup label="SALLE IT">
+						<option value="DEV3">DEV3-Ngauss</option>
+					    <option value="DEV4">DEV4-Jospin</option>
+					    <option value="DEV5">DEV5-Yvan</option>
+					    <option value="DEV6">DEV6-Miguel</option>
+					</optgroup> 
+				   </select>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label class="col-sm-3 control-label">Archiver:</label>
+                  <div class="col-sm-9">
+                    <input type="FILE" class="form-control" id="title" name="title">
+                  </div>
+                </div>
+				<div class="form-group">
+                 <label class="col-sm-3 control-label"></label>
+                  <div class="col-sm-9">
+                    <a href="/yii2_guide_en.pdf" style="color:blue"><u>Consulter le Compte rendu de Réunion</u></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">			
+				<button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary antosubmit2" onclick="new PNotify({
+									  title: 'Regular Success',
+									  text: 'That thing that you were trying to do worked!',
+									  type: 'success',
+									  styling: 'bootstrap3'
+								  });">Save changes
+				</button>								  		  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
+    <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+    <!-- /calendar modal -->
+        
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- FullCalendar -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.js"></script>
+	<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- PNotify -->
+    <script src="../vendors/pnotify/dist/pnotify.js"></script>
+    <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script>
+	<script src="js/custom.js"></script>
+    <!-- FullCalendar -->
+	
+	 
+    <script>
+      $(window).load(function() {
+        var date = new Date(),
+            d = date.getDate(),
+            m = date.getMonth(),
+            y = date.getFullYear(),
+            started,
+            categoryClass;
+
+        var calendar = $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          selectable: true,
+          selectHelper: true,
+          select: function(start, end, allDay) {
+            $('#fc_create').click();
+
+            started = start;
+            ended = end;
+
+            $(".antosubmit").on("click", function() {
+              var title = $("#title").val();
+			  var descr = $("#descr").val();
+			  var lieu = $("#title10").val();
+			  var debut = $("#title11").val();
+			  var fin = $("#title12").val();
+			/*  var participants = $("#Participants").val();*/
+			  
+              if (end) {
+                ended = end;
+              }
+
+              categoryClass = $("#event_type").val();
+
+              if (title) {
+			 /* $("#participants2").val(participants);*/
+                calendar.fullCalendar('renderEvent', {
+                    title: title+lieu+debut+fin,
+                    start: started,
+                    end: end,
+                    allDay: allDay
+                  },
+                  true // make the event "stick"
+                );
+              }
+
+              $('#title').val('');
+              calendar.fullCalendar('unselect');
+
+              $('.antoclose').click();
+
+              return false;
+            });
+          },
+          eventClick: function(calEvent, jsEvent, view) {
+            $('#fc_edit').click();
+			//alert(calEvent.title);
+            $('#title2').val(calEvent.title);
+			$("#descr2").val( $( '#descr').val() ) ;
+			$("#title20").val($( '#title10').val() );
+			$('#title21').val($( '#title11').val());
+			$('#title22').val($( '#title12').val());
+			$('#participants2').val($( '#participants').val());
+            categoryClass = $("#event_type").val();
+
+            $(".antosubmit2").on("click", function() {
+              calEvent.title = $("#title2").val();
+			  $("#descr").val( $( '#descr2').val() ) ;
+			  $("#title10").val($( '#title20').val() );
+			  $('#title11').val($( '#title21').val());
+			  $('#title12').val($( '#title22').val());
+			  $('#participants').val($( '#participants2').val());
+
+              calendar.fullCalendar('updateEvent', calEvent);
+			  $('.antoclose2').click();
+            });
+
+            calendar.fullCalendar('unselect');
+          },
+          editable: true,
+          events: [{
+            title: 'All Day Event',
+            start: new Date(y, m, 1)
+          }, {
+            title: 'Long Event',
+            start: new Date(y, m, d - 5),
+            end: new Date(y, m, d - 2)
+          }, {
+            title: 'Meeting',
+            start: new Date(y, m, d, 10, 30),
+            allDay: false
+          }, {
+            title: 'Lunch',
+            start: new Date(y, m, d + 14, 12, 0),
+            end: new Date(y, m, d, 14, 0),
+            allDay: false
+          }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 19, 0),
+            end: new Date(y, m, d + 1, 22, 30),
+            allDay: false
+          }, {
+            title: 'Click for Google',
+            start: new Date(y, m, 28),
+            end: new Date(y, m, 29),
+            url: 'http://google.com/'
+          }]
+        });
+      });
+        
+    </script>
+	<script>
+      $(document).ready(function() {
+        new PNotify({
+          title: "PNotify",
+          type: "success",
+          text: "Welcome. Try hovering over me. You can click things behind me, because I'm non-blocking.",
+          nonblock: {
+              nonblock: true
+          },
+          addclass: 'dark',
+          styling: 'bootstrap3',
+          hide: false,
+          before_close: function(PNotify) {
+            PNotify.update({
+              title: PNotify.options.title + " - Enjoy your Stay",
+              before_close: null
+            });
+
+            PNotify.queueRemove();
+
+            return false;
+          }
+        });
+
+      });
+    </script>
+	
+	<script>
+      $(document).ready(function() {
+        var cnt = 10;
+
+        TabbedNotification = function(options) {
+          var message = "<div id='ntf" + cnt + "' class='text alert-" + options.type + "' style='display:none'><h2><i class='fa fa-bell'></i> " + options.title +
+            "</h2><div class='close'><a href='javascript:;' class='notification_close'><i class='fa fa-close'></i></a></div><p>" + options.text + "</p></div>";
+
+          if (!document.getElementById('custom_notifications')) {
+            alert('doesnt exists');
+          } else {
+            $('#custom_notifications ul.notifications').append("<li><a id='ntlink" + cnt + "' class='alert-" + options.type + "' href='#ntf" + cnt + "'><i class='fa fa-bell animated shake'></i></a></li>");
+            $('#custom_notifications #notif-group').append(message);
+            cnt++;
+            CustomTabs(options);
+          }
+        };
+
+        CustomTabs = function(options) {
+          $('.tabbed_notifications > div').hide();
+          $('.tabbed_notifications > div:first-of-type').show();
+          $('#custom_notifications').removeClass('dsp_none');
+          $('.notifications a').click(function(e) {
+            e.preventDefault();
+            var $this = $(this),
+              tabbed_notifications = '#' + $this.parents('.notifications').data('tabbed_notifications'),
+              others = $this.closest('li').siblings().children('a'),
+              target = $this.attr('href');
+            others.removeClass('active');
+            $this.addClass('active');
+            $(tabbed_notifications).children('div').hide();
+            $(target).show();
+          });
+        };
+
+        CustomTabs();
+
+        var tabid = idname = '';
+
+        $(document).on('click', '.notification_close', function(e) {
+          idname = $(this).parent().parent().attr("id");
+          tabid = idname.substr(-2);
+          $('#ntf' + tabid).remove();
+          $('#ntlink' + tabid).parent().remove();
+          $('.notifications a').first().addClass('active');
+          $('#notif-group div').first().css('display', 'block');
+        });
+      });
+    </script>
+	
+	
+    <!-- /FullCalendar -->
+  </body>
+</html>
